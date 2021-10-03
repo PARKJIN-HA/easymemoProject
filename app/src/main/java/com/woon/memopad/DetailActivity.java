@@ -59,7 +59,6 @@ public class DetailActivity extends AppCompatActivity {
         update = findViewById(R.id.update);
         exit = findViewById(R.id.exit);
         detailTitle = findViewById(R.id.detailTitle);
-        detailImage = findViewById(R.id.detailImage);
         detailDes = findViewById(R.id.detailDes);
         db = AppDatabase.getInstance(this);
 

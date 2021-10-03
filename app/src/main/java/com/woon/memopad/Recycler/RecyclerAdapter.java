@@ -63,16 +63,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            key = itemView.findViewById(R.id.key);
+
             title = itemView.findViewById(R.id.memoTextView1);
             description = itemView.findViewById(R.id.memoTextView2);
         }
 
         public void onBind(User user, int position) {
-            String s = "" + (position+1);
-            key.setText(s);
-            title.setText(user.getTitle());
-            description.setText(user.getDes());
 
             itemView.setOnLongClickListener(v -> {
                 userData.remove(user);
