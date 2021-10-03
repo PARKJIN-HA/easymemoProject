@@ -69,6 +69,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
         }
 
         public void onBind(User user, int position) {
+            title.setText(user.getTitle());
+            description.setText(user.getDes());
 
             itemView.setOnLongClickListener(v -> {
                 userData.remove(user);
