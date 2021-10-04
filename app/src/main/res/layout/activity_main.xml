@@ -21,7 +21,8 @@
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:layout_weight="1"
-            android:src="@drawable/ic_add" />
+            android:src="@drawable/ic_add"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mainRecyclerView"
