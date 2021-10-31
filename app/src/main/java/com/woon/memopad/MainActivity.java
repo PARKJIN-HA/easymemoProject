@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -15,6 +16,7 @@ import com.woon.memopad.Room.User;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 
 public class MainActivity extends AppCompatActivity {
@@ -69,4 +71,11 @@ public class MainActivity extends AppCompatActivity {
         adapter.addItems((ArrayList) users);
         super.onStart();
     }
+
+    public void CalendarLink(View view) {
+        startActivity(new Intent("com.woon.memopad.CalendarActivity"));
+    }
+
+    // 추가
+
 }
