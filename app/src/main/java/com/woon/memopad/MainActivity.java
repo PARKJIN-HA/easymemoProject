@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -43,6 +44,17 @@ public class MainActivity extends AppCompatActivity {
         add.setOnClickListener(v -> {
             move();
         });
+
+        
+        // 메뉴 버튼 클릭 이벤트
+        Button btnCalendar = (Button) findViewById(R.id.buttonCalendar);
+        btnCalendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -70,10 +82,6 @@ public class MainActivity extends AppCompatActivity {
         users = AppDatabase.getInstance(this).userDao().getAll();
         adapter.addItems((ArrayList) users);
         super.onStart();
-    }
-
-    public void CalendarLink(View view) {
-        startActivity(new Intent("com.woon.memopad.CalendarActivity"));
     }
 
     // 추가
