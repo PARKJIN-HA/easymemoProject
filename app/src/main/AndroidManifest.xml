@@ -27,6 +27,7 @@
         <activity android:name=".SaveMemoActivity"/>
         <activity android:name=".DetailActivity"/>
         <activity android:name=".CalendarActivity"/>
+        <activity android:name=".MenuActivity"/>
     </application>
 
 </manifest>
