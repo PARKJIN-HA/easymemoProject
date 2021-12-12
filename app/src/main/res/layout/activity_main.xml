@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
@@ -19,15 +19,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="16dp"
-            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
             android:src="@drawable/ic_add"
+            app:backgroundTint="@color/backgroundText"
+            app:rippleColor="@android:color/black"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mainRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
             android:layout_weight="25"
             android:paddingBottom="80dp"
             tools:ignore="MissingConstraints"
@@ -38,31 +41,38 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="bottom"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="1dp">
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="0dp"
-                android:layout_marginRight="0dp"
+                android:layout_marginEnd="0.1dp"
+                android:layout_marginRight="0.1dp"
                 android:layout_weight="1"
+                android:background="@drawable/menu_btn_select"
                 android:text="메모" />
 
             <Button
-                android:id="@+id/buttonCalendar"
+                android:id="@+id/CalBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="0.1dp"
+                android:layout_marginRight="0.1dp"
                 android:layout_weight="1"
-                android:onClick="menuClick"
+                android:background="@drawable/menu_btn_unselect"
+                android:onClick="onMenuButtonClick"
                 android:tag="2"
-                android:text="달력" />
+                android:text="달력"
+                android:textColorLink="@android:color/black" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/menu_btn_unselect"
                 android:text="검색" />
 
             <Button
@@ -70,6 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/menu_btn_unselect"
                 android:text="설정" />
 
         </LinearLayout>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -45,16 +46,6 @@ public class MainActivity extends AppCompatActivity {
             move();
         });
 
-        
-        // 메뉴 버튼 클릭 이벤트
-        Button btnCalendar = (Button) findViewById(R.id.buttonCalendar);
-        btnCalendar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MenuActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 
@@ -85,5 +76,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // 추가
+    public void onMenuButtonClick(View view) {
+        Log.i("------------", "button--------------");
+        Intent intent = new Intent(getApplicationContext(), CalendarActivity.class);
+        startActivity(intent);
 
+        finish();
+    }
 }

@@ -4,15 +4,25 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22291666666666668" />
-        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_add.xml" value="0.23020833333333332" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_add.xml" value="0.40260416666666665" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_close.xml" value="0.23020833333333332" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22291666666666668" />
-        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_calendar.xml" value="0.18465045592705168" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_menu_btn_foreground.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/ic_save.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/menu_btn_background.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/drawable/menu_btn_select.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_calendar.xml" value="0.25" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_detail.xml" value="0.18465045592705168" />
-        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_main.xml" value="0.18465045592705168" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_memo_popup.xml" value="0.33" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/activity_save_memo.xml" value="0.18465045592705168" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/calendar.xml" value="0.203125" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/layout/memorecycler_itemview.xml" value="0.21822916666666667" />
         <entry key="..\:/Android/easymemoProject/app/src/main/res/menu/add_memo_menu.xml" value="0.20677083333333332" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/menu/calendar_menu.xml" value="0.38645833333333335" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/mipmap-anydpi-v26/ic_menu_btn.xml" value="0.40260416666666665" />
+        <entry key="..\:/Android/easymemoProject/app/src/main/res/mipmap-anydpi-v26/ic_menu_btn_round.xml" value="0.234375" />
         <entry key="..\:/Users/JINHA/OneDrive/MemoPad/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/JINHA/OneDrive/MemoPad/app/src/main/res/drawable/ic_add.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/JINHA/OneDrive/MemoPad/app/src/main/res/drawable/ic_close.xml" value="0.14583333333333334" />
@@ -29,7 +39,7 @@
   <component name="ProjectResources">
     <resource url="http://schemas.android.com/apk/res/android" location="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

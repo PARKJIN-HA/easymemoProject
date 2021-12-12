@@ -35,7 +35,8 @@ public class SaveMemoActivity extends AppCompatActivity {
 
     private void initialized() {
         description = findViewById(R.id.description);
-        result = findViewById(R.id.result);
+        // 주석 처리
+//      result = findViewById(R.id.result);
 
         db = AppDatabase.getInstance(this);
 
