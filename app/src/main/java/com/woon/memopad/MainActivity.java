@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void move() {
-        Intent intent = new Intent(getApplicationContext(), SaveMemoActivity.class);
+    public void move() {
+        Intent intent = new Intent(getApplicationContext(), MemoPopupActivity.class);
         startActivity(intent);
     }
 

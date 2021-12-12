@@ -23,8 +23,9 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/memoType"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <RadioButton
                 android:id="@+id/basic"
@@ -53,11 +54,11 @@
         </RadioGroup>
 
         <Button
+            android:id="@+id/enterMemo"
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:background="#00000000"
             android:gravity="center"
-            android:onClick="mOnClose"
             android:padding="10dp"
             android:text="확인"
             android:textColor="#ff7a00"

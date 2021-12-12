@@ -71,6 +71,7 @@ public class CalendarActivity extends AppCompatActivity {
 
             str = new String(fileData);
             contentText.setText(str);
+            haveContent();
 
             changeBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -90,8 +91,8 @@ public class CalendarActivity extends AppCompatActivity {
                 }
             });
 
-            if (str != null) {
-                haveContent();
+            if (contentText.getText().equals("")) {
+                nullContent();
             }
         } catch (Exception e) {
             e.printStackTrace();
