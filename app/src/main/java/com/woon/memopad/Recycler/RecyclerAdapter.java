@@ -1,14 +1,10 @@
 package com.woon.memopad.Recycler;
 
-import android.app.AlertDialog;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -64,8 +60,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
             super(itemView);
 
 
-            title = itemView.findViewById(R.id.memoTextView1);
-            description = itemView.findViewById(R.id.memoTextView2);
+            title = itemView.findViewById(R.id.textView1);
+            description = itemView.findViewById(R.id.textView4);
         }
 
         public void onBind(User user, int position) {

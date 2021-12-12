@@ -76,11 +76,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // 추가
-    public void onMenuButtonClick(View view) {
-        Log.i("------------", "button--------------");
+    public void onCalendarButtonClick(View view) {
         Intent intent = new Intent(getApplicationContext(), CalendarActivity.class);
         startActivity(intent);
-
+        finish();
+    }
+    public void onSearchButtonClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    public void onSettingButtonClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
+        startActivity(intent);
         finish();
     }
 }

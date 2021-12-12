@@ -28,25 +28,21 @@
             android:layout_height="match_parent">
 
             <RadioButton
-                android:id="@+id/basic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="기본" />
 
             <RadioButton
-                android:id="@+id/address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="주소" />
 
             <RadioButton
-                android:id="@+id/ID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID/Passward" />
+                android:text="ID/Password" />
 
             <RadioButton
-                android:id="@+id/bankAccount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="계좌번호" />

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bank_list">
+        <item>국민은행</item>
+        <item>기업은행</item>
+        <item>농협은행</item>
+        <item>신한은행</item>
+        <item>산업은행</item>
+        <item>우리은행</item>
+        <item>카카오뱅크</item>
+        <item>한국씨티은행</item>
+        <item>하나은행</item>
+        <item>SC제일은행</item>
+        <item>경남은행</item>
+        <item>광주은행</item>
+        <item>대구은행</item>
+        <item>도이치은행</item>
+        <item>뱅크오브아메리카</item>
+        <item>부산은행</item>
+        <item>산림조합중앙회</item>
+        <item>저축은행</item>
+        <item>새마을금고</item>
+        <item>수협은행</item>
+        <item>신협중앙회</item>
+        <item>우체국</item>
+        <item>전북은행</item>
+        <item>제주은행</item>
+        <item>중국전설은행</item>
+        <item>중국공상은행</item>
+        <item>중국은행</item>
+        <item>BNP파리바은행</item>
+        <item>HSBC은행</item>
+        <item>JP모간체이스은행</item>
+        <item>케이뱅크</item>
+        <item>토스뱅크</item>
+    </string-array>
+
+    <string-array name="font_size">
+        <item>작게</item>
+        <item>중간</item>
+        <item>크게</item>
+    </string-array>
+    
+    <string-array name="font">
+        <item>a</item>
+        <item>b</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    
+    <string-array name="line_up">
+        <item>내림차순</item>
+        <item>오름차순</item>
+    </string-array>
+
+</resources>

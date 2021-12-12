@@ -32,6 +32,21 @@ public class MemoPopupActivity extends Activity {
                     startActivity(intent);
                     finish();
                 }
+                else if (radioButton.getText().toString().equals("주소")) {
+                    Intent intent = new Intent(getApplicationContext(), AddressActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (radioButton.getText().toString().equals("ID/Password")) {
+                    Intent intent = new Intent(getApplicationContext(), IdPasswordActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else if (radioButton.getText().toString().equals("계좌번호")) {
+                    Intent intent = new Intent(getApplicationContext(), AccountActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
     }

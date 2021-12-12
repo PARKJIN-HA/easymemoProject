@@ -118,7 +118,7 @@
                 android:layout_marginRight="0.1dp"
                 android:layout_weight="1"
                 android:background="@drawable/menu_btn_unselect"
-                android:onClick="onMemoMenuButtonClick"
+                android:onClick="onMemoButtonClick"
                 android:text="메모" />
 
             <Button
@@ -139,6 +139,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/menu_btn_unselect"
+                android:onClick="onSearchButtonClick"
                 android:text="검색" />
 
             <Button
@@ -147,6 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/menu_btn_unselect"
+                android:onClick="onSettingButtonClick"
                 android:text="설정" />
         </LinearLayout>
 

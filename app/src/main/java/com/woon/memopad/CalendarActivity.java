@@ -142,10 +142,19 @@ public class CalendarActivity extends AppCompatActivity {
         }
     }
 
-    public void onMemoMenuButtonClick(View view) {
+    public void onMemoButtonClick(View view) {
         Log.i("------------", "button--------------");
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(intent);
         finish();
     }
-}
+    public void onSearchButtonClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+        startActivity(intent);
+        finish();
+    }
+    public void onSettingButtonClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), SettingActivity.class);
+        startActivity(intent);
+        finish();
+    }}
