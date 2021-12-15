@@ -23,7 +23,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText1"
+                    android:id="@+id/city"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
@@ -35,7 +35,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/district"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
@@ -47,7 +47,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/town"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
@@ -67,7 +67,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/roadName"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
@@ -79,7 +79,7 @@
                     android:textSize="16sp" />
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/detailAddr"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
@@ -91,27 +91,29 @@
                     android:textSize="16sp" />
 
                 <Button
-                    android:id="@+id/adrAddBtn"
+                    android:id="@+id/addrAddBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="0.5"
-                    android:onClick="saveAddress"
+                    android:onClick="addAddress"
                     android:text="추가" />
             </LinearLayout>
 
         </LinearLayout>
 
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/address_recyclerview"
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            tools:listitem="@layout/memorecycler_itemview_address">
+            android:layout_height="match_parent">
 
-        </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"></LinearLayout>
+        </ScrollView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

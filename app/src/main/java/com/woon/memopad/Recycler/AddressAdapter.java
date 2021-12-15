@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.woon.memopad.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHolder> {
@@ -59,8 +58,8 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.ViewHold
             cityT    = itemView.findViewById(R.id.textView1);
             districtT= itemView.findViewById(R.id.textView2);
             buildingT= itemView.findViewById(R.id.textView3);
-            roadNameT= itemView.findViewById(R.id.editText4);
-            detailT  = itemView.findViewById(R.id.editText5);
+            roadNameT= itemView.findViewById(R.id.roadName);
+            detailT  = itemView.findViewById(R.id.detailAddr);
 
         }
     }

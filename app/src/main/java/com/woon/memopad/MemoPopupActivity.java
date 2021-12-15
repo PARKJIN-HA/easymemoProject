@@ -12,6 +12,7 @@ import android.widget.RadioGroup;
 public class MemoPopupActivity extends Activity {
     RadioGroup radioGroup;
     Button button;
+    int addressNum = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +20,15 @@ public class MemoPopupActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_memo_popup);
 
-        radioGroup = (RadioGroup)findViewById(R.id.memoType);
-        button = (Button) findViewById(R.id.enterMemo);
+        radioGroup  = (RadioGroup)findViewById(R.id.memoType);
+        button      = (Button) findViewById(R.id.enterMemo);
+
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            int radioId = radioGroup.getCheckedRadioButtonId();
-            RadioButton radioButton = (RadioButton)findViewById(radioId);
+                int radioId = radioGroup.getCheckedRadioButtonId();
+                RadioButton radioButton = (RadioButton)findViewById(radioId);
                 if (radioButton.getText().toString().equals("기본")) {
                     Intent intent = new Intent(getApplicationContext(), SaveMemoActivity.class);
                     startActivity(intent);
@@ -34,6 +36,8 @@ public class MemoPopupActivity extends Activity {
                 }
                 else if (radioButton.getText().toString().equals("주소")) {
                     Intent intent = new Intent(getApplicationContext(), AddressActivity.class);
+                    intent.putExtra("number", "Address" + addressNum);
+                    addressNum++;
                     startActivity(intent);
                     finish();
                 }
